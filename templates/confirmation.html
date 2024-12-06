@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Confirmation{% endblock %}
+
+{% block content %}
+
+<meta http-equiv="refresh" content="5;url={% url 'index' %}">
+<div class="container text-center">
+    <h1 class="text-center"><b>Confirmation Page</b></h1>
+    <hr>
+    <br>
+    <div class="alert alert-success" role="alert">
+        Booking Done Successfully! ✔️
+      </div>
+</div>
+
+{% endblock %}

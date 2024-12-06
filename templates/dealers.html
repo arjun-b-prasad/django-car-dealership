@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Dealers{% endblock %}
+
+
+{% block content %}
+<h1 class="text-center"><b>Our Dealers</b></h1>
+<hr>
+<div class="container text-center bg-light" >
+{% for i in dealer %}
+<div class="card text-center mx-3 my-3" style="width: 18rem; display:inline-block">
+    <img src="{{i.deal_image.url}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{i.deal_name}}</h5>
+      <p class="card-text">{{i.deal_spec}}</p>
+      <h6 class="card-text">{{i.dept_name}}</h6>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
